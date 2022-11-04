@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+picture {
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    max-width: 450px;
+
+    border-radius: 12px;
+}
+
+main .top-card img{
+    border-top-left-radius: 12px;   
+    border-top-right-radius: 12px; 
+}
+
+main .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+main .content h1{
+    margin: 16px 0;
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+main .content>p {
+    padding: 0 60px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+main .content .price-categorie {
+    width: 100%;
+    margin: 16px 0;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    
+}
+
+main .content .price-categorie .price {
+    margin-left: 16px;
+}
+
+main .content .price-categorie .price h2{
+    font-size: 1rem;
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+main .content .price-categorie .price p{
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+main .content .price-categorie a {
+    margin-left: auto;
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+
+main .content .price-categorie a:hover{
+    color:hsl(245, 40%, 52%);
+}
+
+main .content .payment{
+    border: 0;
+    width: 80%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+
+main .content .payment p {
+    color: white;
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight: 700;
+}
+
+main .content .payment:hover{
+    background-color: hsl(245, 40%, 52%);
+}
+
+main .content .cancel{
+    border: 0;
+    background-color: transparent;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+main .content .cancel p {
+    font-family: 'Red Hat Display',sans-serif;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+
+main .content .cancel p:hover{
+    color: hsl(223, 47%, 23%);
+}
